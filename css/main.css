@@ -88,11 +88,15 @@ h1,h2,h3{
 @-webkit-keyframes load {
   0%{
 		filter:sepia(100%) contrast(100%) saturate(500%) hue-rotate(99999999deg);
-		transform: translate(50px,50px);
-  }50%{
+		transform: translate(5px,5px);
+  }20%{
 		filter:sepia(100%) contrast(100%) saturate(500%) hue-rotate(0deg);
 		transform: translate(0px,-30px);
 	}
+	50%{
+		filter:sepia(100%) contrast(100%) saturate(500%) hue-rotate(0deg);
+		transform: translate(5px,5px);
+  }
   100% {
 		filter:sepia(100%) contrast(100%) saturate(500%) hue-rotate(99999999deg);
 		transform: translate(100px,10px);
