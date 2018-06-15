@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+body{
+	overflow-y:hidden;
+	height:100%;
+	bottom:0;
+  background-color:#000;
+  margin-top:0px;
+
+}
+body, html{
+	margin-left:0;
+	right:0;
+	top:0px;
+	width:100%;
+	overflow-x:hidden;
+}
+menu#bar>img{
+  display:inline;
+}
+menu#bar>div{
+  display:inline;
+	position: fixed;
+	top:10px;
+	right:10px;
+}menu#bar>div>a{
+	color:#060;
+	font-size:23px;
+	padding:0px 5px;
+	font-family: 'Inconsolata', sans-serif;
+	text-decoration:none;
+}menu#bar>div>a:hover{
+	text-decoration:none;
+}
+menu#bar{
+  z-index: 3;
+  position:fixed;
+  background-color: #000;
+  margin-top:0;
+  right:0;
+  left:0;
+}
+header#inicio{
+  height:600px;
+  z-index:2;
+  position:relative;
+  background-image: url(../assets/bg.png);
+  background-repeat: repeat;
+  background-color: rgba(0,0,0,0.8);
+  padding-top: 280px;
+}header#inicio>div>p{
+  text-align:center;
+  margin:auto;
+  font-size:50px;
+  position:relative;
+  color:#060;
+	text-shadow:0px 0px 5px #010;
+	font-family: 'Inconsolata', monospace;
+}
+header#fundo{
+  height:600px;
+  background-color: #000;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+	text-align:center;
+  z-index:1;
+}header#fundo>video{
+	width:100%;
+	margin-top:100px;
+}section{
+	width:100%;
+}
+section>div{
+	width:80%;
+	font-size: 20px;
+	text-align: justify;
+	margin:auto auto 100px auto;
+}section>div>p{
+	font-family: 'Source Code Pro', monospace;
+}
+.write{
+  font-family: 'Cutive Mono', monospace;
+  font-size: 2.0em;
+  color: #317b1e;
+  width: 55ch;
+  border-right: 0px solid;
+  animation: type 5s steps(55, end);
+  white-space:nowrap;
+  overflow:hidden;
+	width:90%;
+}
+@keyframes type{
+0%{width: 0%;
+  border-right: 5px solid #317b1e;
+}
+}
+
+.cursor{
+  animation: cursor 1s infinite;
+  border-bottom: 3px solid #317b1e;
+	height:60px;
+  padding-left: 5px;
+}
+@keyframes cursor {
+  0%{opacity: 0;}
+}
