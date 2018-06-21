@@ -9,8 +9,6 @@
 	margin-top:0;
 	color:#fff;
 	animation:load 0.4s;z-index:2;
-}#porra:hover{
-	animation:hov 0.4s;z-index:2;
 }
 body{
 	overflow-y:hidden;
@@ -118,4 +116,3 @@ section>div{
 @keyframes cursor {
   0%{opacity: 0;}
 }
-
